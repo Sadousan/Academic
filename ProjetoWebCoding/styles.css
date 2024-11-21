@@ -26,13 +26,16 @@ body {
 
 /* Hero Section (já expliquei o que é, no index.html)*/
 .hero-section {
-    height: 100vh;
+    height: auto; /* Ajuste dinâmico */
+    min-height: 100vh; /* Sempre no mínimo o tamanho da tela */
     background-image: url('https://todosdestinos.com/wp-content/uploads/2019/01/pajucara_credito_marcio_no_mundo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+    margin-bottom: 10vh; /* Espaço entre hero e cards */
+    z-index: 10;
 }
 /* Adiciona um gradiente escuro para melhorar a legibilidade do texto */
 .hero-overlay {
@@ -47,10 +50,19 @@ body {
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 11;
     text-align: center;
     color: white;
-    padding-top: 5vh;
+    padding: 5vh 20px 15vh; /* Espaço responsivo */
+}
+
+
+.hero-content img {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero-content h1 {
@@ -90,7 +102,7 @@ body {
     top: 20px;
     left: 20px;
     z-index: 999;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     border: none;
     color: white;
     width: 50px;
@@ -109,7 +121,8 @@ body {
 
 /* Cards que vão se movimentar */
 .floating-cards-container {
-    position: absolute;
+    position: relative;
+    margin-top: -7%;
     bottom: 10%;
     left: 0;
     right: 0;
@@ -323,8 +336,8 @@ body {
 
 /* Seria o botão de fechamento do menu lateral em forma de círculo azulado*/
 .close-sidebar {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     border: none;
     background: rgba(33, 150, 243, 0.1);
     border-radius: 50%;
@@ -507,7 +520,7 @@ body {
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 50%;
     color: white;
