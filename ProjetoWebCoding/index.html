@@ -14,7 +14,7 @@
 <body>
     <!--Menu Lateral-->
     <nav class="sidebar">
-       <div class="sidebar-header">
+        <div class="sidebar-header">
             <img src="logo-sidebar.png" alt="Logo Alagoas" class="logo">
             <button class="close-sidebar">
                 <i class="fas fa-times"></i>
@@ -63,28 +63,30 @@
         <i class="fas fa-bars"></i>
     </button>
 
-    <!-- Hero Section (imagem em destaque, no fundo, no começo da página)-->
+    <!-- Hero Section (video em destaque, no fundo, no começo da página)-->
     <header class="hero-section">
+        <div class="background-section">
+            <video autoplay muted loop>
+                <source src="background-video.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <img src="logo-principal.png" alt="Logotipo inicio do site">
+            <img src="logo-principal.png" alt="Logotipo do site">
         </div>
-        
-        <!-- container para os cards em movimento -->
         <div class="floating-cards-container">
             <button class="nav-arrow prev">
-                <!-- seta esquerda -->
                 <i class="fas fa-chevron-left"></i>
             </button>
-            
             <div class="floating-cards">
+                <!-- Adicione os cards aqui -->
             </div>
-            <!-- seta direita -->
             <button class="nav-arrow next">
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
     </header>
+    
 
     <!-- Seções de conteúdo de acordo com as categorias definidas (praias, parques, etc) -->
     <main>

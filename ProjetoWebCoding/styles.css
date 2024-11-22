@@ -28,7 +28,7 @@ body {
 .hero-section {
     height: auto; /* Ajuste dinâmico */
     min-height: 100vh; /* Sempre no mínimo o tamanho da tela */
-    background-image: url('https://todosdestinos.com/wp-content/uploads/2019/01/pajucara_credito_marcio_no_mundo.jpg');
+    /*background-image: url('https://todosdestinos.com/wp-content/uploads/2019/01/pajucara_credito_marcio_no_mundo.jpg');*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,6 +37,30 @@ body {
     margin-bottom: 10vh; /* Espaço entre hero e cards */
     z-index: 10;
 }
+
+section{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+}
+
+.background-section{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.background-section video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 /* Adiciona um gradiente escuro para melhorar a legibilidade do texto */
 .hero-overlay {
     position: absolute;
@@ -173,6 +197,18 @@ body {
     object-fit: cover;
     /* escurecer o conteúdo do card*/
     filter: brightness(0.8);
+}
+
+.floating-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Ajusta para a metade inferior */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .floating-card-content {
