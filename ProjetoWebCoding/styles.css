@@ -58,9 +58,9 @@ body {
 
 
 .hero-content img {
-    width: 600px;
-    max-width: 600px;
-    max-height: 350px;
+    width: 1105px;
+    max-width: 620px;
+    max-height: 320px;
     object-fit: cover;
     display: flex;
     margin: 0 auto;
