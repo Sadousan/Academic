@@ -227,6 +227,7 @@ section{
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.2);
 }
+
 .floating-card img:hover{
     filter: brightness(1);
 }
