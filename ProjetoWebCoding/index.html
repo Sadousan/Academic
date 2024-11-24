@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Botão pra abrir o menu lateral -->
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
     <!--Menu Lateral-->
     <nav class="sidebar">
         <div class="sidebar-header">
@@ -32,7 +36,7 @@
 
         <!-- Filtro de resultados de busca por categorias de lugares -->
         <div class="filter-section">
-            <h3>Filtrar por Categoria</h3>
+            <h3>Selecione a Categoria</h3>
             <ul class="menu-items">
                 <li><a href="#todos" class="menu-item active" data-category="todos">
                     <i class="fas fa-globe"></i>
@@ -58,18 +62,14 @@
         </div>
     </nav>
 
-    <!-- Botão pra abrir o menu lateral -->
-    <button class="menu-toggle">
-        <i class="fas fa-bars"></i>
-    </button>
-
     <!-- Hero Section (video em destaque, no fundo, no começo da página)-->
     <header class="hero-section">
         <div class="background-section">
-            <video autoplay muted loop>
+            <video autoplay muted loop id="background-video">
                 <source src="assets/videos/background-video.mp4" type="video/mp4">
             </video>
         </div>
+        
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <img src="assets/images/logo-principal.png" alt="Logotipo do site">

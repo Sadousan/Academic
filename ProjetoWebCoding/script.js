@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initAutocomplete();
 });
 
+
+
+
 function initSidebar() {
     const menuToggle = document.querySelector('.menu-toggle');
     const closeSidebar = document.querySelector('.close-sidebar');
