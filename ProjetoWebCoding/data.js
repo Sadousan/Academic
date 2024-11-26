@@ -191,6 +191,7 @@ const turisticPoints = {
 };
 /* Para o filtro de pesquisa */
 const cidadesAlagoas = [
+    "Murici",
     "Maceió",
     "Maragogi",
     "Marechal Deodoro",

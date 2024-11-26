@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paraíso Alagoano - Guia Turístico</title>
-    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <!-- Importa ícones do Font Awesome para serem usados em botões e seções -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -19,7 +19,7 @@
     <!--Menu Lateral-->
     <nav class="sidebar">
         <div class="sidebar-header">
-            <img src="assets/images/logo-sidebar.png" alt="Logo Alagoas" class="logo">
+            <img src="/assets/images/logo-sidebar.png" alt="Logo Alagoas" class="logo">
             <button class="close-sidebar">
                 <i class="fas fa-times"></i>
             </button>
@@ -61,35 +61,17 @@
             </ul>
         </div>
     </nav>
+
     <!-- Hero Section (video em destaque, no fundo, no começo da página)-->
     <header class="hero-section">
-        <div class="background-section">
-            <video autoplay muted loop id="background-video">
-                <source src="assets/videos/background-video.mp4" type="video/mp4">
-            </video>
-        </div>
+        
         
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <img src="assets/images/logo-principal.png" alt="Logotipo do site">
+            <h1>Praias</h1>
+            <p>Praias Alagoanas</p>
+            <a href="#praias" class="btn-hero">Ver Praias</a>
         </div>
-        <div class="floating-cards-container">
-            <button class="nav-arrow prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="floating-cards" title="Clique no card">
-                <!-- Card no JavaScript -->
-            </div>
-            <button class="nav-arrow next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-        <!-- Fazer um nome "ver mais" que, ao clicar, baixará a tela para a categoria "praia". Faça essa função dentro de uma div bem estruturada -->
-        <div class="see-more-button" onclick="window.location.hash='praias'" title="Clique para mais informações">
-            <!-- Imagem para clicar -->
-            <img src="/assets/icons/iconseta(1).png" alt="Ver mais">
-        </div>
-        
     </header>
     
 
@@ -97,27 +79,6 @@
     <main>
         <section id="praias" class="content-section">
             <h2>Praias</h2>
-            <div class="cards-grid">
-                <!-- Card no JavaScript -->
-            </div>
-        </section>
-
-        <section id="parques" class="content-section">
-            <h2>Parques</h2>
-            <div class="cards-grid">
-                <!-- Card no JavaScript -->
-            </div>
-        </section>
-
-        <section id="historia" class="content-section">
-            <h2>História</h2>
-            <div class="cards-grid">
-                <!-- Card no JavaScript -->
-            </div>
-        </section>
-
-        <section id="rural" class="content-section">
-            <h2>Turismo Rural</h2>
             <div class="cards-grid">
                 <!-- Card no JavaScript -->
             </div>
@@ -175,3 +136,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
