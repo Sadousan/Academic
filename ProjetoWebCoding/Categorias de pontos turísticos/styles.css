@@ -27,15 +27,15 @@ body {
 
 /* Hero Section */
 .hero-section {
-    position: relative;
+    position: absolute;
     height: 100vh; /* Altura da tela principal */
-    background: url('https://todosdestinos.com/wp-content/uploads/2019/01/pajucara_credito_marcio_no_mundo.jpg');
+    background: url('https://www.segueviagem.com.br/wp-content/uploads/2020/07/Maragogi-Alagoas-shutterstock_1573782880-scaled.jpg') no-repeat center;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-size: cover;
 }
-
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -46,121 +46,157 @@ body {
     z-index: 1;
 }
 
+
 .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: var(--background);
-}
-
-.hero-content img {
-    max-width: 300px;
-}
-
-/* Seções principais */
-.content-section {
-    margin: 50px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 1200px; /* Centraliza e limita largura */
-}
-
-.content-section h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--primary-dark);
-}
-
-/* Estilo dos cards */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: var(--background-alt);
-    box-shadow: 0 4px 6px var(--shadow);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: var(--transition);
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid var(--primary);
-}
-
-.card h3 {
-    font-size: 1.25rem;
-    margin: 15px 0 10px;
-    color: var(--text);
-}
-
-.card p {
-    font-size: 1rem;
-    color: var(--text-light);
-    padding: 0 10px 15px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px var(--shadow);
-}
-
-/* Seções de Conteúdo */
-.content-section {
-    padding: 5rem 2rem;
-    background: var(--background);
-}
-
-.content-section:nth-child(even) {
-    background: var(--background-alt);
-}
-
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.card {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px var(--shadow);
-    transition: var(--transition);
-    cursor: pointer;
-    height: 300px;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1.5rem;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    z-index: 11;
     color: white;
-    transform: translateY(100%);
-    transition: var(--transition);
+    display: block;
+    text-align: center;
+    /* Aumentar tamanho do background para a direita e esquerda, tornando-o mais longo */
+    background-image: linear-gradient(to right, transparent 48.3%, #04488880 51%);
+    background-color: #f8f8f823;
+    padding: 10px;
+    width: 25%;
+    border-radius: 20px;
 }
 
-.card:hover .card-content {
-    transform: translateY(0);
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    /* Aumentar tamanho do background para a direita e esquerda, tornando-o mais longo */
+    /* background-image: linear-gradient(to right, transparent 48.3%, #ffffff 52%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #008cff; */
 }
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza no eixo vertical */
+    align-items: center; /* Centraliza no eixo horizontal */
+    height: 100vh; /* Mantém a altura da tela */
+    position: relative;
+    padding: 20px; /* Espaço interno */
+}
+
+/* tornar botão see-more clicável, devido à hierarquia do z-index */
+.hero-section .see-more-button {
+    position: absolute; /* Posiciona o botão em relação à hero-section */
+    bottom: 20px; /* Ajuste a distância do fundo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajuste para alinhar centralmente */
+    z-index: 15; /* Acima do overlay */
+    margin: 0; /* Remove margens para centralizar */
+}
+
+.see-more-button{
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    transition: var(--transition);
+    backdrop-filter: blur(25px);
+    background-color: rgba(245, 245, 245, 0.103);
+    z-index: 2;
+    transition: 1.5s;
+}
+
+.see-more-button img{
+    width: 43px;
+    height: 40px;
+    margin-right: 0%;
+}
+
+.see-more-button:hover {
+    cursor: pointer;
+    /* Fazer girar */
+    scale: 1.1;
+    backdrop-filter: blur(25px);
+    background-color: rgba(0, 153, 255, 0.315);
+    /* sombra com mesmo background hover */
+    /* sombra com efeito de sombra */
+    box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.3);
+}
+
+
+main section{
+    /* Fazer conteúdo ser justificado no centro da página, com margens laterais */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: var(--transition);
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+
+/* Menu lateral */
+.sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    transition: var(--transition);
+    z-index: 1000;
+    box-shadow: 2px 0 10px var(--shadow);
+    overflow-y: auto;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* botão de abrir menu */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+    font-size: 1.5rem;
+}
+
+.menu-toggle:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
 
 /* Modal */
 .modal {
@@ -212,6 +248,272 @@ body {
 }
 
 
+/* Responsividade (adaptar os elementos da página para telas menores) */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content img{
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+}
+
+/* Sidebar Header: Estiliza o cabeçalho do menu lateral com uma área flexível, centralizando o conteúdo e adicionando uma linha de divisão para separar os elementos do menu*/
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(33, 150, 243, 0.1);
+}
+
+/* mesmo sem ter ainda uma imagem de logo, defini uma formatação pra imagem que ainda vamos procurar/fazer. Então tá com tamanho e animação ajustado, só falta criar a imagem kkkkkk */
+.logo {
+    height: 65px;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Seria o botão de fechamento do menu lateral em forma de círculo azulado*/
+.close-sidebar {
+    width: 70px;
+    height: 30px;
+    border: none;
+    background: rgba(33, 150, 243, 0.1);
+    border-radius: 50%;
+    color: var(--primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-sidebar:hover {
+    background: var(--primary);
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* barra de pesquisa do menu */
+.search-input-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+/* o ícone de lupa na barra de pesquisa do menu */
+.search-input-wrapper i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+/* Aqui é o input que vai receber o nome da cidade na barra de pesquisa do menu */
+#searchInput {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid rgba(33, 150, 243, 0.2);
+    border-radius: 25px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+/* as opções de filtros do menu (praias, parques, rural, etc) */
+.filter-section h3 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* é a barrinha azul no lado esquerdo do nome "Filtrar por categoria" no menu. Achei que ficaria legal */
+.filter-section h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+/*estrutura e posicionamento dos itens/opções do menu */
+.menu-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+/* decoração desses itens/opções */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+/* os ícones de cada item do menu */
+.menu-item i {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    width: 24px;
+    text-align: center;
+}
+
+.menu-item span {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* mais efeitos ao passar o mouse e clicar nos itens do menu*/
+.menu-item:hover, .menu-item.active {
+    background: var(--primary);
+    color: white;
+    transform: translateX(5px);
+}
+/* mais efeitos...mas focados na movimentação do fundo e posição dos itens */
+.menu-item::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: all 0.5s ease;
+}
+
+.menu-item:hover::before {
+    left: 100%;
+}
+
+/* Animação para ícones */
+.menu-item:hover i {
+    transform: scale(1.2);
+}
+
+/* Sugestões de busca (não tô conseguindo fazer funcionar por enquanto... deveria mostrar o nome completo da cidade quando o usuário começa a digitar o começo do nome dela)*/
+.search-suggestions {
+    margin-top: 5px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.suggestion-item:hover {
+    background: rgba(33, 150, 243, 0.1);
+    padding-left: 20px;
+}
+
+/* Scrollbar personalizada para o menu (barra de rolagem)*/
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+.content-section {
+    padding: 5rem 2rem;
+    background: var(--background);
+}
+
+.content-section:nth-child(even) {
+    background: var(--background-alt);
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: var(--transition);
+    cursor: pointer;
+    height: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+}
+
+
 
 
 /* posicionamento e estilização do rodapé */
@@ -220,6 +522,7 @@ body {
     color: white;
     padding: 4rem 2rem 2rem;
 }
+
 
 /* Rodapé */
 .footer-content {

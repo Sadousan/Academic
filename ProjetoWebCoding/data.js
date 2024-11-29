@@ -28,7 +28,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 10,
+            id: 4,
             nome: "Praia do Gunga",
             cidade: "Roteiro",
             descricao: "Uma das mais belas praias do Brasil, com falésias, coqueiros e águas cristalinas.",
@@ -37,7 +37,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 11,
+            id: 5,
             nome: "Praia de São Miguel dos Milagres",
             cidade: "São Miguel dos Milagres",
             descricao: "Parte da Costa dos Corais, com piscinas naturais e águas transparentes.",
@@ -46,7 +46,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 12,
+            id: 6,
             nome: "Praia do Patacho",
             cidade: "Porto de Pedras",
             descricao: "Praia paradisíaca com piscinas naturais e arrecifes de coral.",
@@ -57,7 +57,7 @@ const turisticPoints = {
     ],
     parques: [
         {
-            id: 4,
+            id: 7,
             nome: "Parque Municipal de Maceió",
             cidade: "Maceió",
             descricao: "Área verde com trilhas ecológicas e espaços para lazer.",
@@ -66,7 +66,7 @@ const turisticPoints = {
             destaque: false
         },
         {
-            id: 5,
+            id: 8,
             nome: "Parque Memorial Quilombo dos Palmares",
             cidade: "União dos Palmares",
             descricao: "Sítio histórico que preserva a memória do Quilombo dos Palmares.",
@@ -75,7 +75,7 @@ const turisticPoints = {
             destaque: false
         },
         {
-            id: 13,
+            id: 9,
             nome: "Parque Natural Municipal de Maceió",
             cidade: "Maceió",
             descricao: "Maior área verde urbana de Maceió, com trilhas e fauna local.",
@@ -84,7 +84,7 @@ const turisticPoints = {
             destaque: false
         },
         {
-            id: 14,
+            id: 10,
             nome: "APA Costa dos Corais",
             cidade: "Maragogi",
             descricao: "Maior área de proteção ambiental marinha do Brasil.",
@@ -95,7 +95,7 @@ const turisticPoints = {
     ],
     historia: [
         {
-            id: 6,
+            id: 11,
             nome: "Centro Histórico de Penedo",
             cidade: "Penedo",
             descricao: "Conjunto arquitetônico colonial preservado às margens do Rio São Francisco.",
@@ -104,7 +104,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 7,
+            id: 12,
             nome: "Museu Théo Brandão",
             cidade: "Maceió",
             descricao: "Museu de Antropologia e Folclore que preserva a cultura popular alagoana.",
@@ -113,7 +113,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 15,
+            id: 13,
             nome: "Casa do Patrimônio",
             cidade: "Marechal Deodoro",
             descricao: "Casarão histórico que preserva a memória da primeira capital alagoana.",
@@ -122,7 +122,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 16,
+            id: 14,
             nome: "Igreja Nossa Senhora dos Martírios",
             cidade: "União dos Palmares",
             descricao: "Igreja histórica com arquitetura barroca do século XVIII.",
@@ -131,7 +131,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 20,
+            id: 15,
             nome: "Casa de cultura",
             cidade: "São Miguel dos Campos",
             descricao: "Casa de cultura de São Miguel dos Campos",
@@ -143,7 +143,7 @@ const turisticPoints = {
     ],
     rural: [
         {
-            id: 8,
+            id: 16,
             nome: "Canyon do Rio São Francisco",
             cidade: "Delmiro Gouveia",
             descricao: "Impressionantes formações rochosas às margens do Rio São Francisco.",
@@ -152,7 +152,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 9,
+            id: 17,
             nome: "Rota do Cangaço",
             cidade: "Piranhas",
             descricao: "Roteiro histórico que percorre os caminhos do cangaço no sertão alagoano.",
@@ -161,7 +161,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 17,
+            id: 18,
             nome: "Vale do Paraíso",
             cidade: "Água Branca",
             descricao: "Região serrana com cachoeiras e trilhas ecológicas.",
@@ -170,7 +170,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 18,
+            id: 19,
             nome: "Serra da Barriga",
             cidade: "União dos Palmares",
             descricao: "Local histórico onde existiu o Quilombo dos Palmares.",
@@ -179,7 +179,7 @@ const turisticPoints = {
             destaque: true
         },
         {
-            id: 19,
+            id: 20,
             nome: "Mirante do Talhado",
             cidade: "Delmiro Gouveia",
             descricao: "Vista panorâmica do Canyon do São Francisco.",
@@ -187,7 +187,7 @@ const turisticPoints = {
             imagem: "https://blog.hurb.com/wp-content/uploads/2022/09/mirante-da-praia-do-gunga-1024x576.png",
             destaque: true
         }
-    ]
+    ],
 };
 /* Para o filtro de pesquisa */
 const cidadesAlagoas = [

@@ -52,15 +52,17 @@ section{
 
 /* tornar botão see-more clicável, devido à hierarquia do z-index */
 .hero-section .see-more-button {
-    position: relative;
-    margin-top: 20px; /* Ajuste conforme necessário */
+    position: absolute; /* Posiciona o botão em relação à hero-section */
+    bottom: 20px; /* Ajuste a distância do fundo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajuste para alinhar centralmente */
     z-index: 15; /* Acima do overlay */
+    margin: 0; /* Remove margens para centralizar */
 }
 
 .see-more-button{
     display: block;
     margin-top: 1rem;
-    margin-bottom: 10px;
     text-align: center;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -307,6 +309,88 @@ section{
         transform: translateX(calc(-50% - 10px));
     }
 }
+
+.mn-main {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    margin-right: auto;
+    list-style-type: none;
+    justify-content: right; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+    padding: 20px; /* Espaçamento interno da seção */
+    background-color: #00000059; /* Fundo leve */
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.mn-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 120px; /* Itens flexíveis com largura mínima */
+    max-width: 150px; /* Limita a largura máxima */
+}
+
+.mn-item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column; /* Ícone acima do texto */
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+
+.mn-item img {
+    width: 60px; /* Tamanho do ícone */
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.mn-item span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    transition: transform 1s ease;
+    transform: translateY(10px); /* Efeito de subir */
+    /* esconder */
+    opacity: 0;
+}
+
+/* Hover para mostrar span */
+.mn-item:hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover para ampliar ícone */
+
+.mn-item:hover {
+    transform: scale(1.05); /* Efeito de destaque */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Realça o item */
+}
+
+.mn-item:hover img {
+    transform: scale(1.1); /* Ampliar ícone */
+}
+
+@media (max-width: 768px) {
+
+    .mn-item {
+        flex: 1 1 100px; /* Itens menores */
+        max-width: 120px;
+    }
+
+    .mn-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mn-item span {
+        font-size: 0.8rem;
+    }
+}
+
 
 /* Seções de Conteúdo */
 .content-section {
