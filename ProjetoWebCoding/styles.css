@@ -177,8 +177,8 @@ section{
     width: 300px;
     height: 100vh;
     /* background embaçado*/
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
-    backdrop-filter: blur(10px);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.959) 25%, rgba(194, 194, 194, 0.603)100%);
+    backdrop-filter: blur(2px);
     padding: 2rem;
     transition: var(--transition);
     z-index: 1000;
@@ -391,10 +391,9 @@ section{
 .mn-item span {
     font-size: 0.9rem;
     font-weight: bold;
-    color: #555;
+    color: #000000;
     transition: color 0.3s ease;
     text-align: center;
-    opacity: 0;
     transition: opacity 1s ease;
 }
 
@@ -413,7 +412,6 @@ section{
 
 .mn-item:hover span {
     color: #fff;
-    opacity: 1;
     /* Deslizar de baixo para cima */
     transition: transform 0.5s ease;
     transform: translateY(0);
@@ -580,7 +578,7 @@ section{
     justify-content: space-between;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(33, 150, 243, 0.1);
+    border-bottom: 2px solid rgba(0, 140, 255, 0.356);
 }
 
 /* mesmo sem ter ainda uma imagem de logo, defini uma formatação pra imagem que ainda vamos procurar/fazer. Então tá com tamanho e animação ajustado, só falta criar a imagem kkkkkk */
@@ -598,9 +596,9 @@ section{
     width: 70px;
     height: 30px;
     border: none;
-    background: rgba(33, 149, 243, 0.308);
+    background: rgba(33, 149, 243, 0.479);
     border-radius: 50%;
-    color: var(--primary);
+    color: rgba(0, 0, 0, 0.486);
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -655,7 +653,7 @@ section{
     position: relative;
 }
 
-/* é a barrinha azul no lado esquerdo do nome "Filtrar por categoria" no menu. Achei que ficaria legal */
+/* é a barrinha azul no lado esquerdo do nome "Selecionar a Categoria" no menu. Achei que ficaria legal */
 .filter-section h3::before {
     content: '';
     position: absolute;
@@ -668,9 +666,11 @@ section{
     border-radius: 2px;
 }
 
+
+
 menu{
     /* animação de surgimento elegante, conforme aparece os elementos do conteúdo */
-    animation: slide-in 0.5s ease-in-out forwards;
+    animation: slide-in 1s ease-in-out forwards;
     
 }
 

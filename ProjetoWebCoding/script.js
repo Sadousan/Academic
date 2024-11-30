@@ -107,22 +107,44 @@ function initFilters() {
             
             card.style.display = matchesCategory && matchesSearch ? 'block' : 'none';
         });
-    }
-
-    menuItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            e.preventDefault();
-            menuItems.forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
-            filterContent(item.dataset.category, searchInput.value);
-        });
-    });
+    }''
 
     searchInput.addEventListener('input', (e) => {
         const activeCategory = document.querySelector('.menu-item.active').dataset.category;
         filterContent(activeCategory, e.target.value);
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuItems = document.querySelectorAll(".menu-item");
+    const notification = document.getElementById("notification");
+
+    menuItems.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            menuItems.forEach((el) => el.classList.remove("active"));
+            item.classList.add("active");
+
+            // Exibe a notificação
+            showNotification(`Você já está na página ${item.textContent.trim()}!`);
+        });
+    });
+
+    // Função para exibir a notificação
+    function showNotification(message) {
+        notification.textContent = message;
+        notification.classList.remove("hidden");
+        notification.classList.add("visible");
+
+        // Esconde a notificação após 3 segundos
+        setTimeout(() => {
+            notification.classList.remove("visible");
+            notification.classList.add("hidden");
+        }, 3000);
+    }
+});
+
 
 function showDetails(point) {
     const modal = document.getElementById('detailsModal');
