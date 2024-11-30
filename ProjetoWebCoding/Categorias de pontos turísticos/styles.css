@@ -58,6 +58,14 @@ body {
     padding: 10px;
     width: 25%;
     border-radius: 20px;
+    transition: 1s ease-in-out;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+.hero-content:hover{
+    background-image: linear-gradient(to right, transparent 48.3%, #f8f8f823 51%);
+    background-color:#04488880;
+    scale: 1.1;
 }
 
 .hero-content h1 {
@@ -161,6 +169,7 @@ main section{
     align-items: flex-start; /* Alinha os itens ao topo */
     gap: 20px; /* Espaçamento geral entre os itens */
     padding: 20px;
+    border-bottom: 1px solid #1976D2;;
 }
 
 /* Título destacado */
@@ -292,7 +301,7 @@ main section{
     top: 0;
     width: 300px;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(143, 143, 143, 0.418));
     backdrop-filter: blur(10px);
     padding: 2rem;
     transition: var(--transition);
@@ -429,6 +438,7 @@ main section{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(33, 149, 243, 0.308);
 }
 
 .close-sidebar:hover {
@@ -459,7 +469,7 @@ main section{
     border-radius: 25px;
     font-size: 0.95rem;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.192);
 }
 
 #searchInput:focus {
