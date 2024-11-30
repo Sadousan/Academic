@@ -310,86 +310,136 @@ section{
     }
 }
 
-.mn-main {
-    display: block;
-    margin-left: auto;
-    padding: 0;
-    margin-right: auto;
-    list-style-type: none;
-    justify-content: right; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os blocos */
-    padding: 20px; /* Espaçamento interno da seção */
-    background-color: #00000059; /* Fundo leve */
+/* Container principal */
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra para múltiplas linhas */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaçamento geral entre os itens */
+    padding: 20px;
+}
+
+/* Título destacado */
+.mn-item-titulo {
+    width: 100%; /* Ocupa toda a largura para ficar em linha separada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Espaçamento do título para os itens */
+}
+
+.mn-item-titulo img {
+    width: 80px;
+    height: 80px;
+}
+
+.mn-item-titulo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1976D2;
+    background-color: #333;
     
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-}
-
-.mn-item {
+    /* Gradiente de cor */
+    background:linear-gradient(to right,  #1976d2, #115191);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1 1 120px; /* Itens flexíveis com largura mínima */
-    max-width: 150px; /* Limita a largura máxima */
+    transition: opacity 1s ease;
+    transform: translateY(10px);
 }
 
-.mn-item a {
-    text-decoration: none;
+/* Estilo para os itens */
+.mn-item {
     display: flex;
     flex-direction: column; /* Ícone acima do texto */
     align-items: center;
-    gap: 10px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Fundo leve */
+    border-radius: 15px 2px;
+    border: 2px solid #1976d28c;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 120px; /* Define o tamanho fixo dos itens */
+}
+
+/* Ícones e textos dentro dos itens */
+.mn-item a {
+    text-decoration: none;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .mn-item img {
-    width: 60px; /* Tamanho do ícone */
-    height: 60px;
+    width: 50px;
+    height: 50px;
     transition: transform 0.3s ease;
 }
 
 .mn-item span {
     font-size: 0.9rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #555;
     transition: color 0.3s ease;
-    transition: transform 1s ease;
-    transform: translateY(10px); /* Efeito de subir */
-    /* esconder */
+    text-align: center;
     opacity: 0;
+    transition: opacity 1s ease;
 }
 
-/* Hover para mostrar span */
-.mn-item:hover span {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Hover para ampliar ícone */
-
+/* Hover para os itens */
 .mn-item:hover {
-    transform: scale(1.05); /* Efeito de destaque */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Realça o item */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #1976D2;
+    border: 2px solid #08223b8c;
+
 }
 
 .mn-item:hover img {
-    transform: scale(1.1); /* Ampliar ícone */
+    transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+.mn-item:hover span {
+    color: #fff;
+    opacity: 1;
+    /* Deslizar de baixo para cima */
+    transition: transform 0.5s ease;
+    transform: translateY(0);
+    /* Animar a transição */
+    transition: transform 0.5s ease, color 0.5s ease;
+}
 
+/* Responsividade */
+@media (max-width: 768px) {
     .mn-item {
-        flex: 1 1 100px; /* Itens menores */
-        max-width: 120px;
+        width: 100px;
     }
 
     .mn-item img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .mn-item span {
         font-size: 0.8rem;
     }
+
+    .mn-item-titulo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mn-item-titulo span {
+        font-size: 1rem;
+    }
 }
+
 
 
 /* Seções de Conteúdo */
@@ -610,6 +660,12 @@ section{
     height: 20px;
     background: var(--primary);
     border-radius: 2px;
+}
+
+menu{
+    /* animação de surgimento elegante, conforme aparece os elementos do conteúdo */
+    animation: slide-in 0.5s ease-in-out forwards;
+    
 }
 
 /*estrutura e posicionamento dos itens/opções do menu */

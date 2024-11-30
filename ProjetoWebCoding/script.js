@@ -132,7 +132,7 @@ function showDetails(point) {
         <img src="${point.imagem}" alt="${point.nome}" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
         <h2>${point.nome}</h2>
         <p class="location"><i class="fas fa-map-marker-alt"></i> ${point.cidade}</p>
-        <div class="description">
+        <div class="description">destaques
             <h3>Sobre</h3>
             <p>${point.descricao}</p>
         </div>

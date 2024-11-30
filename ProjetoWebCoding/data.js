@@ -189,6 +189,7 @@ const turisticPoints = {
         }
     ],
 };
+
 /* Para o filtro de pesquisa */
 const cidadesAlagoas = [
     "Murici",
