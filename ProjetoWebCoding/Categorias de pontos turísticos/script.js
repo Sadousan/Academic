@@ -8,7 +8,43 @@ document.addEventListener('DOMContentLoaded', () => {
     initAutocomplete();
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const path = window.location.pathname.split("/").pop(); // Obtém o nome do arquivo (ex: 'praias.html')
+    const category = path.replace(".html", ""); // Extrai a categoria (ex: 'praias')
+    
+    // Se a categoria existir no objeto de pontos turísticos
+    if (turisticPoints[category]) {
+        const sectionElements = document.querySelectorAll(`#${category} .cards-container`);
+        const points = turisticPoints[category];
 
+        points.forEach(point => {
+            // Cria um card para cada ponto turístico
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+                <img src="${point.imagem}" alt="${point.nome}" class="card-image">
+                <div class="card-content">
+                    <h3>${point.nome}</h3>
+                    <button class="details-button" data-id="${point.id}">Ver mais</button>
+                </div>
+            `;
+            
+            // Adiciona o card à seção correta
+            const section = document.getElementById(point.id);
+            section.querySelector(".cards-container").appendChild(card);
+
+            // Evento para o botão "Ver mais"
+            card.querySelector(".details-button").addEventListener("click", () => {
+                showDetails(point);
+            });
+        });
+    }
+});
+
+function showDetails(point) {
+    // Função para exibir detalhes no modal ou em outra seção
+    alert(`Detalhes sobre: ${point.nome} (ID: ${point.id})`);
+}
 
 
 function initSidebar() {
@@ -28,69 +64,6 @@ function initSidebar() {
     document.addEventListener('click', (e) => {
         if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
             sidebar.classList.remove('active');
-        }
-    });
-}
-
-function initFloatingCards() {
-    const floatingContainer = document.querySelector('.floating-cards');
-    const featuredPoints = Object.values(turisticPoints)
-        .flat()
-        .filter(point => point.destaque);
-    
-    // Criar wrapper para animação infinita
-    const wrapper = document.createElement('div');
-    wrapper.className = 'floating-cards-wrapper';
-    
-    // Duplicar pontos para criar efeito infinito
-    const allPoints = [...featuredPoints, ...featuredPoints];
-    
-    allPoints.forEach(point => {
-        const card = document.createElement('div');
-        card.className = 'floating-card';
-        card.innerHTML = `
-            <img src="${point.imagem}" alt="${point.nome}" onerror="this.src='https://via.placeholder.com/300x200?text=${point.nome}'">
-            <div class="floating-card-content">
-                <h3>${point.nome}</h3>
-                <p>${point.cidade}</p>
-            </div>
-        `;
-        
-        card.addEventListener('click', () => showDetails(point));
-        wrapper.appendChild(card);
-    });
-    
-    floatingContainer.appendChild(wrapper);
-
-    // Clone dos cards para criar um loop perfeito
-    const clone = wrapper.cloneNode(true);
-    floatingContainer.appendChild(clone);
-}
-
-
-
-function loadContent() {
-    Object.entries(turisticPoints).forEach(([category, points]) => {
-        const container = document.querySelector(`#${category} .cards-grid`);
-        if (container) {
-            points.forEach(point => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.dataset.category = category;
-                card.dataset.city = point.cidade.toLowerCase();
-                
-                card.innerHTML = `
-                    <img src="${point.imagem}" alt="${point.nome}" loading="lazy">
-                    <div class="card-content">
-                        <h3>${point.nome}</h3>
-                        <p>${point.cidade}</p>
-                        <p class="card-description">${point.descricao}</p>
-                    </div>
-                `;
-                
-                card.addEventListener('click', () => showDetails(point));
-                container.appendChild(card);
-            });
         }
     });
 }
@@ -221,36 +194,6 @@ function initAutocomplete() {
     document.addEventListener('click', (e) => {
         if (!searchBox.contains(e.target)) {
             suggestionsDiv.innerHTML = '';
-        }
-    });
-}
-
-function initCardNavigation() {
-    const container = document.querySelector('.floating-cards');
-    const prevBtn = document.querySelector('.nav-arrow.prev');
-    const nextBtn = document.querySelector('.nav-arrow.next');
-    const scrollAmount = 300; // Ajuste conforme necessário
-
-    prevBtn.addEventListener('click', () => {
-        container.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    nextBtn.addEventListener('click', () => {
-        container.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    // Reiniciar animação quando chegar ao final
-    container.addEventListener('scroll', () => {
-        if (container.scrollLeft === 0) {
-            container.scrollLeft = container.scrollWidth / 2;
-        } else if (container.scrollLeft >= container.scrollWidth / 2) {
-            container.scrollLeft = 0;
         }
     });
 }
