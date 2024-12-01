@@ -120,7 +120,7 @@ const turisticPoints = {
             descricao: "Conjunto arquitetônico colonial preservado às margens do Rio São Francisco.",
             historia: "Fundada em 1614, é uma das cidades mais antigas do Brasil, com forte influência portuguesa em sua arquitetura.",
             imagem: "https://viagenseoutrashistorias.com.br/wp-content/uploads/2022/10/penedo-alagoas.jpg",
-            destaque: false
+            destaque: true
         },
         {
             id: 14,
@@ -247,7 +247,7 @@ const turisticPoints = {
         },
         {
             id: 27,
-            nome: "PicuaíAlagoas",
+            nome: "Picuaí Alagoas",
             cidade: " ",
             descricao: "",
             historia: " ",

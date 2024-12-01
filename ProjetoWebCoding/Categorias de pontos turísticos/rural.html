@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,10 @@
     <!-- Importa ícones do Font Awesome para serem usados em botões e seções -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Importa a fonte "poppins" para a página -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Botão pra abrir o menu lateral -->
     <button class="menu-toggle">
@@ -24,7 +27,7 @@
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        
+
         <!-- Mecanismo de busca/pesquisa para filtrar os resultados de pesquisa por cidade -->
         <div class="search-box">
             <div class="search-input-wrapper">
@@ -36,41 +39,43 @@
 
         <!-- Filtro de resultados de busca por categorias de lugares -->
         <div class="filter-section">
-            <h3 style="color: rgb(15, 103, 175)";>Selecione a Categoria</h3>
+            <h3 style="color: rgb(15, 103, 175)" ;>Selecione a Categoria</h3>
             <ul class="menu-items">
                 <li><a href="/index.html" class="menu-item active">
-                    <i class="fas fa-globe"></i>
-                    <span>Página Principal</span>
-                </a></li>
+                        <i class="fas fa-globe"></i>
+                        <span>Página Principal</span>
+                    </a></li>
                 <li><a href="" class="menu-item" title="Praias">
-                    <i class="fas fa-umbrella-beach"></i>
-                    <span>Praias</span>
-                </a></li>
-                <li><a href="#parques" class="menu-item" data-category="parques">
-                    <i class="fas fa-tree"></i>
-                    <span>Parques</span>
-                </a></li>
+                        <i class="fas fa-umbrella-beach"></i>
+                        <span>Praias</span>
+                    </a></li>
                 <div id="notification" class="hidden"></div>
+                <li><a href="/Categorias de pontos turísticos/parques.html" class="menu-item" data-category="parques">
+                        <i class="fas fa-tree"></i>
+                        <span>Parques</span>
+                    </a></li>
                 <li><a href="#historia" class="menu-item" data-category="historia">
-                    <i class="fas fa-landmark"></i>
-                    <span>História</span>
-                </a></li>
+                        <i class="fas fa-landmark"></i>
+                        <span>História</span>
+                    </a></li>
                 <li><a href="#rural" class="menu-item" data-category="rural">
-                    <i class="fas fa-mountain"></i>
-                    <span>Rural</span>
-                </a></li>
+                        <i class="fas fa-mountain"></i>
+                        <span>Rural</span>
+                    </a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section (video em destaque, no fundo, no começo da página)-->
-    <header class="hero-section" style="background-image: url(https://4.bp.blogspot.com/-fLYDuANwiqw/TuzuRCNYtRI/AAAAAAAAA0I/SDffDxG42EY/s1600/DSC09600.JPG);" id="inicio">
-        
-        
+    <header class="hero-section"
+        style="background-image: url();"
+        id="inicio">
+
+
         <div class="hero-overlay"></div>
-        <div class="hero-content" style="background-image: href('https://1.bp.blogspot.com/-4EvlfFq7sbY/V9GyvT4dHcI/AAAAAAAAHDA/pSpzSZQ1n3k5Esm4s_7dp-8V4q5MTtFRwCLcB/s1600/002%2B-%2BPraia%2Bdo%2BGunga.jpg');">
-            <h1>Parques</h1>
-            <p>Parques Alagoanos</p>
+        <div class="hero-content">
+            <h1>Rurais</h1>
+            <p>Loacais rurais de Alagoanas</p>
         </div>
         <!-- Fazer um nome "ver mais" que, ao clicar, baixará a tela para a categoria "praia". Faça essa função dentro de uma div bem estruturada -->
         <div class="see-more-button" title="Clique para mais informações">
@@ -78,7 +83,7 @@
             <a href="#menu-categories"><img src="/assets/icons/iconseta(1).png" alt="Ver mais"></a>
         </div>
     </header>
-    
+
     <!-- Seções de conteúdo de acordo com as categorias definidas (praias) -->
     <main>
         <div id="menu-categories" class="menu-categories">
@@ -95,19 +100,19 @@
                 </a>
             </div>
             <div class="mn-item">
-                <a href="#inicio">
+                <a href="parques.html">
                     <img src="/assets/icons/cerca-do-parque.png" alt="Parques">
                     <span>Parques</span>
                 </a>
             </div>
             <div class="mn-item">
-            <a href="historia.html">
+                <a href="historia.html">
                     <img src="/assets/icons/historia.png" alt="História">
                     <span>História</span>
                 </a>
             </div>
             <div class="mn-item">
-                <a href="rural.html">
+                <a href="#inicio">
                     <img src="/assets/icons/campo.png" alt="Rural">
                     <span>Rural</span>
                 </a>
@@ -120,39 +125,51 @@
             </div>
         </div>
 
-        <section id="7" class="content-section">
-            <h2>Parque Municipal de Maceió</h2>
+        <section id="19" class="content-section">
+            <h2>R</h2>
             <div class="cards-container"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam
+                iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita
+                iure.</p>
         </section>
-        <section id="8" class="content-section">
-            <h2>Parque Memorial Quilombo dos Palmares</h2>
+        <section id="20" class="content-section">
+            <h2>S</h2>
             <div class="cards-container"></div><!--O CARD FICARÁ NESSE ESPAÇO -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam
+                iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita
+                iure.</p>
         </section>
 
-        <section id="9" class="content-section">
-            <h2>Parque Municipal de Maceió</h2>
+        <section id="21" class="content-section">
+            <h2>T</h2>
             <div class="cards-container"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam
+                iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita
+                iure.</p>
         </section>
 
-        <section id="10" class="content-section">
-            <h2>APA Costa dos Corais</h2>
+        <section id="22" class="content-section">
+            <h2>U</h2>
             <div class="cards-container"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam
+                iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita
+                iure.</p>
         </section>
 
-        <section id="11" class="content-section">
-            <h2>Santuário ecológico Santa Tereza</h2>
+        <section id="23" class="content-section">
+            <h2>V</h2>
             <div class="cards-container"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam
+                iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita
+                iure.</p>
         </section>
 
-        <section id="12" class="content-section">
-            <h2>APA de Piaçabuçu</h2>
+        <section id="24" class="content-section">
+            <h2>W</h2>
             <div class="cards-container"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam
+                iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita
+                iure.</p>
         </section>
     </main>
 
@@ -172,9 +189,10 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Sobre Alagoas</h3>
-                <p>Descubra as belezas naturais, a rica história e a cultura única de Alagoas, terra de praias paradisíacas e tradições encantadoras.</p>
+                <p>Descubra as belezas naturais, a rica história e a cultura única de Alagoas, terra de praias
+                    paradisíacas e tradições encantadoras.</p>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Links Úteis</h3>
                 <ul>
@@ -184,7 +202,7 @@
                     <li><a href="#rural">Turismo Rural</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Contato</h3>
                 <p><i class="fas fa-envelope"></i> contato@guiaalagoas.com</p>
@@ -205,5 +223,5 @@
     <script src="/data.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
