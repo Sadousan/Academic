@@ -1,11 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paraíso Alagoano - Guia turístico</title>
+    <title>Paraíso Alagoano - Guia Turístico</title>
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importa ícones do Font Awesome para serem usados em botões e seções -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Importa a fonte "poppins" para a página -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Botão pra abrir o menu lateral -->
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <!--Menu Lateral-->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="/assets/images/logo-sidebar.png" alt="Logo Alagoas" class="logo">
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <!-- Mecanismo de busca/pesquisa para filtrar os resultados de pesquisa por cidade -->
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar cidade...">
+            </div>
+            <div class="search-suggestions"></div>
+        </div>
+
+        <!-- Filtro de resultados de busca por categorias de lugares -->
+        <div class="filter-section">
+            <h3 style="color: rgb(15, 103, 175)";>Selecione a Categoria</h3>
+            <ul class="menu-items">
+                <li><a href="/index.html" class="menu-item active">
+                    <i class="fas fa-globe"></i>
+                    <span>Página Principal</span>
+                </a></li>
+                <li><a href="" class="menu-item" title="Praias">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Praias</span>
+                </a></li>
+                <li><a href="#parques" class="menu-item" data-category="parques">
+                    <i class="fas fa-tree"></i>
+                    <span>Parques</span>
+                </a></li>
+                <div id="notification" class="hidden"></div>
+                <li><a href="#historia" class="menu-item" data-category="historia">
+                    <i class="fas fa-landmark"></i>
+                    <span>História</span>
+                </a></li>
+                <li><a href="#rural" class="menu-item" data-category="rural">
+                    <i class="fas fa-mountain"></i>
+                    <span>Rural</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (video em destaque, no fundo, no começo da página)-->
+    <header class="hero-section" style="background-image: url(https://4.bp.blogspot.com/-fLYDuANwiqw/TuzuRCNYtRI/AAAAAAAAA0I/SDffDxG42EY/s1600/DSC09600.JPG);">
+        
+        
+        <div class="hero-overlay"></div>
+        <div class="hero-content" style="background-image: href('https://1.bp.blogspot.com/-4EvlfFq7sbY/V9GyvT4dHcI/AAAAAAAAHDA/pSpzSZQ1n3k5Esm4s_7dp-8V4q5MTtFRwCLcB/s1600/002%2B-%2BPraia%2Bdo%2BGunga.jpg');">
+            <h1>Parques</h1>
+            <p>Parques Alagoanos</p>
+        </div>
+        <!-- Fazer um nome "ver mais" que, ao clicar, baixará a tela para a categoria "praia". Faça essa função dentro de uma div bem estruturada -->
+        <div class="see-more-button" title="Clique para mais informações">
+            <!-- Imagem para clicar -->
+            <a href="#menu-categories"><img src="/assets/icons/iconseta(1).png" alt="Ver mais"></a>
+        </div>
+    </header>
     
+    <!-- Seções de conteúdo de acordo com as categorias definidas (praias) -->
+    <main>
+        <div id="menu-categories" class="menu-categories">
+            <div class="mn-item-titulo">
+                <a>
+                    <i class="fas fa-globe"></i>
+                    <span>Selecione a Categoria:</span>
+                </a>
+            </div>
+            <div class="mn-item">
+                <a href="Categorias de pontos turísticos/praias.html" target="_blank">
+                    <img src="/assets/icons/de-praia.png" alt="Praias">
+                    <span>Praias</span>
+                </a>
+            </div>
+            <div class="mn-item">
+                <a href="#parques">
+                    <img src="/assets/icons/cerca-do-parque.png" alt="Parques">
+                    <span>Parques</span>
+                </a>
+            </div>
+            <div class="mn-item">
+                <a href="#historia">
+                    <img src="/assets/icons/historia.png" alt="História">
+                    <span>História</span>
+                </a>
+            </div>
+            <div class="mn-item">
+                <a href="#rural">
+                    <img src="/assets/icons/campo.png" alt="Rural">
+                    <span>Rural</span>
+                </a>
+            </div>
+            <div class="mn-item">
+                <a href="#restaurante">
+                    <img src="/assets/icons/prato.png" alt="Restaurantes">
+                    <span>Restaurantes</span>
+                </a>
+            </div>
+        </div>
+
+        <section id="7" class="content-section">
+            <h2>Parque Municipal de Maceió</h2>
+            <div class="cards-container"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+        </section>
+        <section id="8" class="content-section">
+            <h2>Parque Memorial Quilombo dos Palmares</h2>
+            <div class="cards-container"></div><!--O CARD FICARÁ NESSE ESPAÇO -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+        </section>
+
+        <section id="9" class="content-section">
+            <h2>Parque Municipal de Maceió</h2>
+            <div class="cards-container"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+        </section>
+
+        <section id="10" class="content-section">
+            <h2>APA Costa dos Corais</h2>
+            <div class="cards-container"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+        </section>
+
+        <section id="11" class="content-section">
+            <h2>Santuário ecológico Santa Tereza</h2>
+            <div class="cards-container"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+        </section>
+
+        <section id="12" class="content-section">
+            <h2>APA de Piaçabuçu</h2>
+            <div class="cards-container"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur a inventore architecto totam iste debitis id commodi esse, ipsa fugiat numquam omnis soluta rem perspiciatis suscipit cumque expedita iure.</p>
+        </section>
+    </main>
+
+    <!-- Modal para exibir detalhes adicionais de um ponto turístico (ao clicar no card )-->
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <button class="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <!-- seção inferior da página(rodapé), com algumas informações de contato ou outros links que possam ser interessantes na página, mas de forma secundária -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Alagoas</h3>
+                <p>Descubra as belezas naturais, a rica história e a cultura única de Alagoas, terra de praias paradisíacas e tradições encantadoras.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#praias">Praias</a></li>
+                    <li><a href="#parques">Parques</a></li>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#rural">Turismo Rural</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> contato@guiaalagoas.com</p>
+                <p><i class="fas fa-phone"></i> (82) 4002-8922</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Paraíso Alagoano Guia Turístico Alagoas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- chamando/linkando arquivos javascript -->
+    <script src="/data.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
