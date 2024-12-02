@@ -247,11 +247,11 @@ const turisticPoints = {
         },
         {
             id: 27,
-            nome: "Picuaí Alagoas",
-            cidade: " ",
+            nome: "Picuí Alagoas",
+            cidade: "Maceió ",
             descricao: "",
             historia: " ",
-            imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e4/6c/7c/photo0jpg.jpg?w=1000&h=-1&s=1",
+            imagem: "https://media-cdn.tripadvisor.com/media/photo-s/03/39/2d/3e/carne-de-sol-do-picui.jpg",
             destaque: false
         },
         {
@@ -260,26 +260,26 @@ const turisticPoints = {
             cidade: "Penedo",
             descricao: "",
             historia: "",
-            imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e4/6c/7c/photo0jpg.jpg?w=1000&h=-1&s=1",
+            imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/f4/14/f6/imagina-uma-casa-completa.jpg?w=900&h=500&s=1",
             destaque: false
         },
         {
             id: 29,
             nome: "Olibaba Beach Bar",
-            cidade: " ",
+            cidade: "Marechal Deodoro ( Praia do Francês)",
             descricao: "",
             historia: "",
-            imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e4/6c/7c/photo0jpg.jpg?w=1000&h=-1&s=1",
-            destaque: true
+            imagem: "https://media-cdn.tripadvisor.com/media/photo-s/17/46/77/c4/olibaba-beach-bar.jpg",
+            destaque: false
         },
         {
             id: 30,
             nome: "Restaurante Janga",
-            cidade: " ",
+            cidade: " Maceió ",
             descricao: "",
             historia: "",
-            imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e4/6c/7c/photo0jpg.jpg?w=1000&h=-1&s=1",
-            destaque: false
+            imagem: "https://www.nidelins.com.br/wp-content/uploads/2019/04/janga20.jpg",
+            destaque: true
         }
     ]
 };
