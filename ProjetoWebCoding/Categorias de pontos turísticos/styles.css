@@ -258,7 +258,7 @@ main section {
 /* Hover para os itens */
 .mn-item:hover {
     transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
     background-color: #1976D2;
     border: 2px solid #08223b8c;
 
