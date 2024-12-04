@@ -231,8 +231,8 @@ const turisticPoints = {
             id: 25,
             nome: "Akuaba & Vera Moreira",
             cidade: "Maceió",
-            descricao: "A gastronomia afro-baiana ganha traços requintados e uma leitura toda especial no Akuaba, enquanto a culinária franco-brasileira ganha ainda mais sabor em nosso Espaço Gourmet Vera Moreira.",
-            historia: "Aqui, os frutos do mar de qualidade premium, como os camarões, lagostas, peixes e polvos ajudam a contar a história da família Moreira, que há duas décadas transforma os aromas dos temperos africanos num convite irresistível para os amantes da boa mesa. ",
+            descricao: "A gastronomia afro-baiana ganha traços requintados e uma leitura toda especial no Akuaba, enquanto a culinária franco-brasileira ganha ainda mais sabor em nosso Espaço Gourmet Vera Moreira.Há duas décadas transforma os aromas dos temperos africanos num convite irresistível para os amantes da boa mesa",
+            Especialidades: "Fuzura, Peixe á castro Alvez, Atolado de Camarão, Calulu, Funfuinha, Vatapá ",
             imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e4/6c/7c/photo0jpg.jpg?w=1000&h=-1&s=1",
             destaque: true
         },
@@ -240,8 +240,8 @@ const turisticPoints = {
             id: 26,
             nome: "No Quintal",
             cidade: "São Miguel dos Milares",
-            descricao: "",
-            historia: "",
+            descricao: "Adequado para vegetariano, trabalham com Almoço, Jantar e Drinks, a mais pura culunaria alagoana e brasileira",
+            Especialidades: "Munqueca de polvo, Lagostins grelhados, Bobó de camarão, Salada verde",
             imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/a2/bb/f8/caption.jpg?w=1000&h=-1&s=1",
             destaque: true
         },
@@ -249,8 +249,8 @@ const turisticPoints = {
             id: 27,
             nome: "Picuí Alagoas",
             cidade: "Maceió ",
-            descricao: "",
-            historia: " ",
+            descricao: "Restaurante de cozinha regional comandado pelo renomado Chef Wanderson Medeiros. Desde 1989",
+            Especialidades: "Picanha Argentina, Costelinha do Picuí, Carne de sol sertaneja, Cordeiro de sol do Picui ",
             imagem: "https://media-cdn.tripadvisor.com/media/photo-s/03/39/2d/3e/carne-de-sol-do-picui.jpg",
             destaque: false
         },
@@ -258,8 +258,8 @@ const turisticPoints = {
             id: 28,
             nome: "Casa da Picanha Penedo",
             cidade: "Penedo",
-            descricao: "",
-            historia: "",
+            descricao: "Restaurante especializado em cortes especiais da Linha Angus Prime, servem um pouco de todos os tipos de comida, culinaria Steakhouse, Brasileira, Internacional e Churrasco.",
+            Especialidades: "Crispy cheese, Costela black Angus, ribey stick, french rack",
             imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/f4/14/f6/imagina-uma-casa-completa.jpg?w=900&h=500&s=1",
             destaque: false
         },

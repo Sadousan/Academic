@@ -95,9 +95,9 @@ const turisticPoints = {
         },
         {
             id: 11,
-            nome:"Santuario ecológico santa tereza",
+            nome:"Santuario ecológico Santa Tereza",
             cidade: "Atalaia",
-            descricao: "área de mais de 100 hectares abriga aproximadamente 450 animais apreendidos pelo Ibama, que ali recebem tratamento adequado e atendimento veterinário até estarem aptos a voltar para seu habitat natural.                                ",
+            descricao: "Área de mais de 100 hectares abriga aproximadamente 450 animais apreendidos pelo Ibama, que ali recebem tratamento adequado e atendimento veterinário até estarem aptos a voltar para seu habitat natural.                                ",
             historia: " Uma área feita para tratar animais apreendidos com direito a piscinas naturais rodeadas pela vegetação.",
             imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/79/5b/dd/santuario-ecologico-santa.jpg?w=900&h=500&s=1",
             destaque: true
@@ -106,7 +106,7 @@ const turisticPoints = {
             id: 12,
             nome: "APA de piaçabuçu",
             cidade: "Piaçabuçu",
-            descricao: "22 quilômetros de dunas que seguem desde Pontal do Peba até a foz do São Francisco. Para o interior das dunas há uma impressionante mata de restinga. ",
+            descricao: "São 22 quilômetros de dunas que seguem desde Pontal do Peba até a foz do São Francisco. Para o interior das dunas há uma impressionante mata de restinga. ",
             historia: "A Área de Proteção Ambiental de Piaçabuçu foi criada para proteger a desova de tartarugas, dos cinco tipos que frequentam a costa brasileira, quatro desovam aqui. A APA também se propõe a proteger as aves migratórias, e nativas, além da vegetação local.",
             imagem: "https://4.bp.blogspot.com/-SNkVY2DPYqA/V5i-g2xio9I/AAAAAAAAA_Q/AUaM_uYimEk_L1P0iWFHHrVsIp26-TZoACLcB/s640/APA.jpg",
             destaque: false
@@ -217,9 +217,9 @@ const turisticPoints = {
         },
         {
             id: 24,
-            nome: "Fazenda boa sorte",
+            nome: "Fazenda Boa Sorte",
             cidade: "Murici",
-            descricao: "local onde está localizada a Cachoeira da Tiririca, que oferece hospedagem, visitas a apiários e as montanhas de Murici.",
+            descricao: "Local onde está localizada a Cachoeira da Tiririca, que oferece hospedagem, visitas a apiários e as montanhas de Murici.",
             historia: " Criada próximo as montanhas e cachoeiras de Murici essa fazenda foi adaptada para servir de hospedagem para os turistas que buscam um vivencia rural.",
             imagem: "https://scontent.fmcz1-2.fna.fbcdn.net/v/t1.6435-9/71254296_1439282816220591_7117940731477491712_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=X1HQWjMnd90Q7kNvgFIOuht&_nc_zt=23&_nc_ht=scontent.fmcz1-2.fna&_nc_gid=ADpSC-Yw6Ym7TUW8dtvSNfW&oh=00_AYC8FC3RTrtBgjAwm93fMzcvIMzOy0Au0KlOy0UwBlTKLg&oe=67730F7F",
             destaque: true
@@ -267,8 +267,8 @@ const turisticPoints = {
             id: 29,
             nome: "Olibaba Beach Bar",
             cidade: "Marechal Deodoro ( Praia do Francês)",
-            descricao: "",
-            historia: "",
+            descricao: "Bar e restaurante especializado em drinks, Frutos do mar e petiscos em geral",
+            Especialidade: "Peixada, Camarão a milanesa, Batida de morango, isca de peixes",            historia: "",
             imagem: "https://media-cdn.tripadvisor.com/media/photo-s/17/46/77/c4/olibaba-beach-bar.jpg",
             destaque: false
         },
@@ -276,7 +276,8 @@ const turisticPoints = {
             id: 30,
             nome: "Restaurante Janga",
             cidade: " Maceió ",
-            descricao: "",
+            descricao: "Restaurante de frutos do mar da família Bodega do Sertão, eleito o mais bem avaliado restaurante de Maceió em 2024",
+            Especialidades: "Camarão empanado, Bruscheta de camarão, Founde de filé, Funde de lagosta",
             historia: "",
             imagem: "https://www.nidelins.com.br/wp-content/uploads/2019/04/janga20.jpg",
             destaque: true
