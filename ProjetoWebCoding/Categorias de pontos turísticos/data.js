@@ -267,8 +267,8 @@ const turisticPoints = {
             id: 29,
             nome: "Olibaba Beach Bar",
             cidade: "Marechal Deodoro ( Praia do Francês)",
-            descricao: "",
-            historia: "",
+            descricao: "Bar e restaurante especializado em drinks, Frutos do mar e petiscos em geral",
+            Especialidade: "Peixada, Camarão a milanesa, Batida de morango, isca de peixes",
             imagem: "https://media-cdn.tripadvisor.com/media/photo-s/17/46/77/c4/olibaba-beach-bar.jpg",
             destaque: false
         },
@@ -276,8 +276,8 @@ const turisticPoints = {
             id: 30,
             nome: "Restaurante Janga",
             cidade: " Maceió ",
-            descricao: "",
-            historia: "",
+            descricao: "Restaurante de frutos do mar da família Bodega do Sertão, eleito o mais bem avaliado restaurante de Maceió em 2024",
+            Especialidades: "Camarão empanado, Bruscheta de camarão, Founde de filé, Funde de lagosta",
             imagem: "https://www.nidelins.com.br/wp-content/uploads/2019/04/janga20.jpg",
             destaque: true
         }
