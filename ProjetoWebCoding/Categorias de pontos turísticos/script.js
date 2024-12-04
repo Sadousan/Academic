@@ -129,7 +129,7 @@ function showDetails(point) {
         <img src="${point.imagem}" alt="${point.nome}" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
         <h2>${point.nome}</h2>
         <p class="location"><i class="fas fa-map-marker-alt"></i> ${point.cidade}</p>
-        <div class="description">destaques
+        <div class="description">
             <h3>Sobre</h3>
             <p>${point.descricao}</p>
         </div>
@@ -137,6 +137,12 @@ function showDetails(point) {
             <div class="history">
                 <h3>História</h3>
                 <p>${point.historia}</p>
+            </div>
+            ` : ''}
+        ${point.especialidades ? `
+            <div class="especialidade">
+                <h3>Especialidades</h3>
+                <p>${point.especialidades}</p>
             </div>
         ` : ''}
     `;

@@ -195,7 +195,7 @@ const turisticPoints = {
             descricao: "Região serrana com cachoeiras e trilhas ecológicas.",
             historia: "Área de preservação com microclima único no sertão alagoano.",
             imagem: "https://montanero.com.br/wp-content/uploads/2023/02/ValeParaiso_RafaelTeixeira_15-1920x1080.jpg",
-            destaque: true
+            destaque: false
         },
         {
             id: 22,
@@ -204,7 +204,7 @@ const turisticPoints = {
             descricao: "Local histórico onde existiu o Quilombo dos Palmares.",
             historia: "Patrimônio histórico nacional e símbolo da resistência negra.",
             imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Serra_da_Barriga_-_Por_Mirla_D%C3%A2maso_(13).jpg/1200px-Serra_da_Barriga_-_Por_Mirla_D%C3%A2maso_(13).jpg",
-            destaque: false
+            destaque: true
         },
         {
             id: 23,
@@ -277,7 +277,7 @@ const turisticPoints = {
             nome: "Restaurante Janga",
             cidade: " Maceió ",
             descricao: "Restaurante de frutos do mar da família Bodega do Sertão, eleito o mais bem avaliado restaurante de Maceió em 2024",
-            Especialidades: "Camarão empanado, Bruscheta de camarão, Founde de filé, Funde de lagosta",
+            especialidades: "Camarão empanado, Bruscheta de camarão, Founde de filé, Funde de lagosta",
             imagem: "https://www.nidelins.com.br/wp-content/uploads/2019/04/janga20.jpg",
             destaque: true
         }
