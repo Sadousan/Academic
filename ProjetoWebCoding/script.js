@@ -123,13 +123,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuItems.forEach((item) => {
         item.addEventListener("click", (e) => {
-            e.preventDefault();
+            e.preventDefault(); // Evita o comportamento padrão de redirecionar.
 
-            menuItems.forEach((el) => el.classList.remove("active"));
-            item.classList.add("active");
+            const itemHref = item.getAttribute("href");
+            const currentPath = window.location.pathname;
 
-            // Exibe a notificação
-            showNotification(`Você já está na página ${item.textContent.trim()}!`);
+            // Verifica se o link corresponde à página atual
+            if (currentPath.endsWith(itemHref)) {
+                showNotification(`Você já está na página ${item.textContent.trim()}!`);
+            } else {
+                // Permite o redirecionamento ao atualizar a localização
+                window.location.href = itemHref;
+            }
         });
     });
 
@@ -146,6 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 3000);
     }
 });
+
 
 
 function showDetails(point) {

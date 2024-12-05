@@ -8,6 +8,43 @@ document.addEventListener('DOMContentLoaded', () => {
     initAutocomplete();
 });
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuItems = document.querySelectorAll(".menu-item");
+    const notification = document.getElementById("notification");
+
+    menuItems.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault(); // Evita o comportamento padrão de redirecionar.
+
+            const itemHref = item.getAttribute("href");
+            const currentPath = window.location.pathname;
+
+            // Verifica se o link corresponde à página atual
+            if (currentPath.endsWith(itemHref)) {
+                showNotification(`Você já está na página ${item.textContent.trim()}!`);
+            } else {
+                // Permite o redirecionamento ao atualizar a localização
+                window.location.href = itemHref;
+            }
+        });
+    });
+
+    // Função para exibir a notificação
+    function showNotification(message) {
+        notification.textContent = message;
+        notification.classList.remove("hidden");
+        notification.classList.add("visible");
+
+        // Esconde a notificação após 3 segundos
+        setTimeout(() => {
+            notification.classList.remove("visible");
+            notification.classList.add("hidden");
+        }, 3000);
+    }
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const path = window.location.pathname.split("/").pop(); // Obtém o nome do arquivo (ex: 'praias.html')
     const category = path.replace(".html", ""); // Extrai a categoria (ex: 'praias')
@@ -90,35 +127,6 @@ function initFilters() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const menuItems = document.querySelectorAll(".menu-item");
-    const notification = document.getElementById("notification");
-
-    menuItems.forEach((item) => {
-        item.addEventListener("click", (e) => {
-            e.preventDefault();
-
-            menuItems.forEach((el) => el.classList.remove("active"));
-            item.classList.add("active");
-
-            // Exibe a notificação
-            showNotification(`Você já está na página ${item.textContent.trim()}!`);
-        });
-    });
-
-    // Função para exibir a notificação
-    function showNotification(message) {
-        notification.textContent = message;
-        notification.classList.remove("hidden");
-        notification.classList.add("visible");
-
-        // Esconde a notificação após 3 segundos
-        setTimeout(() => {
-            notification.classList.remove("visible");
-            notification.classList.add("hidden");
-        }, 3000);
-    }
-});
 
 
 function showDetails(point) {
