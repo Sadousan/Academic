@@ -218,6 +218,14 @@ filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.822));
     margin: 0 auto;
 }
 
+/* responsividade da imagem acima */
+@media (max-width: 1024px) {
+.hero-content img {
+    width: 100%;
+    height: auto;
+    }
+}
+
 .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -505,6 +513,7 @@ filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.822));
 
 /* Responsividade */
 @media (max-width: 768px) {
+
     .mn-item {
         width: 100px;
     }
