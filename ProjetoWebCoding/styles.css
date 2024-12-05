@@ -946,17 +946,17 @@ filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.822));
 
 /* social links a primeira filha */
 .social-links a:first-child {
-    background: rgb(15, 119, 6);
+    background: rgb(11, 129, 84);
 }
 
 /* social links a segunda filha */
 .social-links a:nth-child(2) {
-    background: rgb(6, 75, 131);
+    background: rgb(10, 79, 136);
 }
 
 /* social links a terceira filha */
 .social-links a:nth-child(3) {
-    background: rgb(89, 82, 189);
+    background: rgb(69, 64, 151);
 }
 
 .social-links a:hover {
