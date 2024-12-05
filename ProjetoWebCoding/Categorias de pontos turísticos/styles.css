@@ -863,6 +863,21 @@ section p {
     transition: var(--transition);
 }
 
+/* social links a primeira filha */
+.social-links a:first-child {
+    background: rgb(15, 119, 6);
+}
+
+/* social links a segunda filha */
+.social-links a:nth-child(2) {
+    background: rgb(6, 75, 131);
+}
+
+/* social links a terceira filha */
+.social-links a:nth-child(3) {
+    background: rgb(89, 82, 189);
+}
+
 .social-links a:hover {
     background-color: white;
     color: #000000;
