@@ -49,40 +49,66 @@ body {
 
 
 .hero-content {
+    position: relative;
     z-index: 11;
     color: white;
     display: block;
     text-align: center;
-    /* Aumentar tamanho do background para a direita e esquerda, tornando-o mais longo */
     background-image: linear-gradient(to right, transparent 48.3%, #2f6ea842 51%);
     background-color: #0000004d;
-    padding: 10px;
-    width: 25%;
+    padding: 20px;
+    max-width: 80%;
+    width: 400px;
     border-radius: 20px;
     transition: 1s ease-in-out;
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    /* filter blur no background */
+    transform: translateY(-50%);
     backdrop-filter: blur(4px);
-
+    margin: auto;
 }
 
-.hero-content:hover{
+.hero-content:hover {
     background-image: linear-gradient(to right, transparent 48.3%, #f8f8f823 51%);
-    background-color:#04488880;
+    background-color: #04488880;
     scale: 1.1;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    /* Aumentar tamanho do background para a direita e esquerda, tornando-o mais longo */
-    /* background-image: linear-gradient(to right, transparent 48.3%, #ffffff 52%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: #008cff; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero-content {
+        width: 60%;
+        padding: 15px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        width: 80%;
+        padding: 10px;
+    }
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        width: 90%;
+        padding: 8px;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+}
+
 
 .hero-content p {
     font-size: 1.5rem;
@@ -829,7 +855,7 @@ section p {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(22, 22, 22);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -838,7 +864,8 @@ section p {
 }
 
 .social-links a:hover {
-    background: var(--secondary);
+    background-color: white;
+    color: #000000;
     transform: translateY(-3px);
 }
 

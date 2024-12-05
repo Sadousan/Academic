@@ -37,50 +37,72 @@ body {
     margin-bottom: 10vh; /* Espaço entre hero e cards */
     z-index: 10;
 }
-.imagem-sobre-nos img{
-    position: absolute;
-    width: 550px;
-    height: 570px;
-    margin-top: -50px;
-    left: 50%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
-    transform: translateX(40%);
-    /* responsividade para manter proporção ao achatar a tela */
-    @media (max-width: 768px) {
-        width: 100%;
-        height: 400px;
-        margin-top: -100px;
-        left: 0;
-        transform: translateX(0);
-    }
-
-}
-.sobre-nos{
-    position: absolute;
-    margin-left: 10px;
-    position: relative;
-    padding: 100px 0;
+.sobre-nos {
+    display: flex; /* Define layout flexível */
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente para telas menores */
+    padding: 100px 20px;
     color: var(--text);
     background-color: var(--background-alt);
-    width: 100%;
-    text-align: center;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-.sobre-nos p{
-    margin-left: 10px;
-    max-width: 900px;
-    text-align: center;
-    font-size: 1.5rem;
+.sobre-nos .imagem-sobre-nos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-.sobre-nos h2{
-    margin-left: 15px;
+.imagem-sobre-nos img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+.imagem-sobre-nos img:hover{
+    /* sombra no canto direito e inferior, com filter*/
+filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.822));
+    
+}
+
+.sobre-nos .texto-sobre-nos {
+    flex: 1;
+    max-width: 600px;
+}
+
+.sobre-nos h2 {
+    margin-left: 45px;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-align: left;
-    color:#2196F3;
+    color: #2196F3;
 }
+
+.sobre-nos p {
+    margin-left: 45px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+
+@media (max-width: 1200px) {
+    .sobre-nos {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sobre-nos .imagem-sobre-nos {
+        margin-bottom: 20px;
+    }
+    
+    .sobre-nos .texto-sobre-nos {
+        max-width: 100%;
+    }
+}
+
 
 .background-section{
     width:100%;
@@ -914,7 +936,7 @@ body {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(22, 22, 22);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -923,7 +945,8 @@ body {
 }
 
 .social-links a:hover {
-    background: var(--secondary);
+    background-color: white;
+    color: #000000;
     transform: translateY(-3px);
 }
 
