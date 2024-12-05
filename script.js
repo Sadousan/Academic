@@ -147,10 +147,10 @@ function showDetails(point) {
                 <p>${point.historia}</p>
             </div>
             ` : ''}
-        ${point.especialidades ? `
-            <div class="especialidade">
+        ${point.Especialidades ? `
+            <div class="Especialidade">
                 <h3>Especialidades</h3>
-                <p>${point.especialidades}</p>
+                <p>${point.Especialidades}</p>
             </div>
         ` : ''}
     `;

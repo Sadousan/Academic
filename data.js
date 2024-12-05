@@ -277,7 +277,7 @@ const turisticPoints = {
             nome: "Restaurante Janga",
             cidade: " Maceió ",
             descricao: "Restaurante de frutos do mar da família Bodega do Sertão, eleito o mais bem avaliado restaurante de Maceió em 2024",
-            especialidades: "Camarão empanado, Bruscheta de camarão, Founde de filé, Funde de lagosta",
+            Especialidades: "Camarão empanado, Bruscheta de camarão, Founde de filé, Funde de lagosta",
             imagem: "https://www.nidelins.com.br/wp-content/uploads/2019/04/janga20.jpg",
             destaque: true
         }
