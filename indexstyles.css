@@ -55,9 +55,10 @@ body {
 }
 
 .imagem-sobre-nos img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 40px;
+    max-width: 120%;
+    height: 700px;
+    margin-right: -100px;
+    margin-top: -20px;
     border-radius: 10px;
     transition: all 1s ease;
 }
@@ -69,7 +70,7 @@ filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.822));
 
 .sobre-nos .texto-sobre-nos {
     flex: 1;
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .sobre-nos h2 {
